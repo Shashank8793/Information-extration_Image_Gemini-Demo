@@ -12,10 +12,10 @@ import base64
 from io import BytesIO
 from dotenv import load_dotenv
 
-# genai.configure(api_key='AIzaSyAku0AUb-InsJlac_4HXxgAoDbyIQ9J0dM')
+# genai.configure(api_key='API key')
 # os.getenv("GOOGLE_API_KEY")
 # genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-genai.configure(api_key='AIzaSyBefMFEStxc82vEXk0rC4o1p-V2KeArLnU')
+genai.configure(api_key='Api key')
 
 ## Function to load 
 
@@ -90,7 +90,6 @@ def convert_image_to_image_parts(image):
 st.set_page_config(page_title="Gemini Image Demo")
 st.sidebar.title("Powered by Moreyeahs INC")
 st.sidebar.write("Extract information From Image")
-st.sidebar.write("Juned.khan@moreyeahs.in") 
 st.sidebar.write("https://www.moreyeahs.com")
 st.header("Report Summary")
 input=st.text_input("What you want to extract: ",key="input")
